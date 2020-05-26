@@ -1,0 +1,102 @@
+/* 确定网页编码格式 */
+@charset 'utf-8';
+
+*{margin: 0;padding: 0;list-style: none;}
+input{outline: none;}
+#chat{
+    width: 300px;
+    height: 600px;
+    border: 1px solid #ccc;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px 10px #ccc;
+    border-radius: 10px;
+}
+.chat_wrap{
+    width: 300px;
+    height: 100%;
+    display: flex; 
+    flex-direction: column;  
+    justify-content: space-between;
+    position: relative;
+}
+ul{
+    overflow-y: auto;
+}
+ul li{
+    width: 75%;
+    min-height: 40px;
+    background: pink;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding: 0 10px;
+    line-height: 40px;
+    word-break: break-all;
+    float: left;
+}
+li:nth-child(even){
+    background-color: aqua;
+    float: right;
+}
+.input_box{
+    width: 300px;
+    height: 40px;
+    border: 2px solid #ccc;
+}
+.input_txt{
+    height: 40px;
+    width: 240px;
+}
+.input_txt input{
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+}
+.input_box input[type="button"]{
+    width: 60px;
+    height: 40px;
+    line-height: 40px;
+    background: aqua;
+    border-radius: 5px;
+}
+.addname{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    width: 160px;
+    height: 101px;
+    border: 1px solid #000;
+    padding: 0 20px;
+    border-radius: 10px;
+    background: #ccc;
+}
+
+.addname .input_txt{
+    margin-top: 10px;
+}
+.addname .input_txt input{
+    height: 40px;
+    width: 150px;
+    padding-left: 10px;
+    border: 1px solid #000;
+}
+.addname .input_btn{
+    width: 160px;
+    height: 40px;
+    margin-top: 10px;
+}
+.addname .input_btn input{
+    width: 70px;
+    height: 30px;
+    background: aqua;
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
